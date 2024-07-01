@@ -1,0 +1,5 @@
+# train
+./darknet detector train data/obj.data cfg/yolov4-custom.cfg yolov4.conv.137 -map
+#test
+!./darknet detector test data/obj.data cfg/yolov4-custom.cfg backup/yolov4-custom_best.weights image1.jpg -thresh 0.3 
+
